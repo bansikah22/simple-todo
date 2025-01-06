@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <title>Task Completion Chart</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Bansico</h1>
+        <nav class="nav-links">
+            <a href="index.html">Back to To-Do List</a> <!-- Link back to main page -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Task Completion Analysis</h2>
+        <div class="chart-container">
+            <canvas id="taskChart" width="400" height="200"></canvas> <!-- Canvas for chart -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Bansikah 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script/chart.js"></script> <!-- Separate JavaScript file for chart logic -->
+</body>
+</html>

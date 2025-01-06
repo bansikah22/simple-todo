@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Bansico</h1>
+        <nav class="nav-links">
+            <a href="chart.html" id="viewChartBtn">View Chart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>To-Do List</h2>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a task..." required>
+            <input type="datetime-local" id="taskTime" required>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div class="table-container">
+            <h3>Tasks</h3>
+            <table id="taskList">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <button id="clearTasksBtn" class="clear-btn">Clear All Tasks</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Bansikah 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

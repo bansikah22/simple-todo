@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height for sticky footer */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    background-color: #000435; /* Navbar color */
+    color: white;
+    padding: 15px 20px; /* Padding for navbar */
+}
+
+.logo {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+}
+
+.container {
+    flex-grow: 1; /* Allow container to grow */
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    flex-grow: 1; /* Allow inputs to grow */
+    padding: 15px; /* Increased padding for larger input */
+    margin-right: 10px; /* Space between inputs */
+    border: 2px solid #000435; /* Border color */
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px; /* Increased padding for buttons */
+    background-color: #000435; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001a66; /* Darker shade on hover */
+}
+
+.clear-btn {
+   margin-top: 10px; /* Space above clear button */
+}
+
+.table-container {
+   margin-top: 20px; /* Space between input and table */
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+th, td {
+   padding: 12px; /* Increased padding for better spacing */
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+thead {
+   background-color: #000435; /* Header background color */
+   color: white; /* Header text color */
+}
+
+tbody tr:hover {
+   background-color: #f5f5f5; /* Row hover effect */
+}
+
+td button {
+   margin-right: 5px; /* Space between action buttons in table */
+}
+
+.footer {
+   text-align: center;
+   margin-top: auto; /* Push footer to the bottom */
+}
