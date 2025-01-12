@@ -46,16 +46,20 @@ h2 {
 
 .input-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
 
 input[type="text"],
 input[type="datetime-local"] {
     flex-grow: 1;
     padding: 15px;
-    margin-right: 10px;
     border: 2px solid #000435;
     border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -66,6 +70,8 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -91,12 +97,15 @@ button:hover {
 table {
     width: 100%;
     border-collapse: collapse;
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
 }
 
 thead {
@@ -110,6 +119,8 @@ tbody tr:hover {
 
 td button {
     margin-right: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
 }
 
 .footer {
@@ -119,3 +130,111 @@ td button {
     padding: 10px 20px;
     margin-top: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="text"],
+    input[type="datetime-local"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="datetime-local"],
+    .clear-btn {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Make icons and buttons responsive */
+button, .clear-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #001a66;
+}
+
+/* Ensuring the icons are responsive */
+td button {
+    font-size: 16px; /* Adjust icon button font size */
+    padding: 8px 12px;
+    width: auto; /* Adjust width to fit content */
+}
+
